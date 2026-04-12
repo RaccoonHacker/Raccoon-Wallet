@@ -1,12 +1,12 @@
-# 🦝 Raccoon Wallet
+# Raccoon Wallet
 
-Raccoon Wallet 是一款采去中心化加密货币钱包。。
-
-
+Raccoon Wallet 是一款采去中心化加密货币钱包。
+- 当前版本:version1
+- 将来加入Defi和NFT功能并重构UI
 
 ## 🚀 核心特性
 
-- **UI 设计**: 基于 Tailwind CSS v4 构建，
+- **UI 设计**: 基于 Tailwind CSS v4 构建
 
 - **去中心化资产管理**: 
   - 支持 **ETH** 及本地测试网资产展示。
@@ -49,12 +49,17 @@ cd raccoon-wallet
 ```bash
 npm install
 ```
-### 3. 启动
+### 3. 启动本地hardhat节点
+```bash
+npx hardhat node
+```
+### 4. 启动
 ```bash
 npm run dev
 ```
 
 ![home](/picture/home.png)
 ![send](/picture/send.png)
+
 ![receive](/picture/receive.png)
 ![network](/picture/network.png)
