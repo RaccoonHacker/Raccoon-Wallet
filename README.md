@@ -1,7 +1,7 @@
 # Raccoon Wallet
 
 Raccoon Wallet 是一款采去中心化加密货币钱包。
-- 当前版本:version1
+- 当前版本:Version1
 - 将来加入Defi和NFT功能并重构UI
 
 ## 🚀 核心特性
