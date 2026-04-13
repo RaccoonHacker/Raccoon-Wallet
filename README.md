@@ -1,9 +1,10 @@
 # Raccoon Wallet
 
-Raccoon Wallet 是一款采去中心化加密货币钱包。
-- 当前版本:Version1
-- 将来加入Defi和NFT功能并重构UI
-
+Raccoon Wallet 是一款采去中心化加密货币钱包。  
+当前版本:Version1  
+## 展望
+1. 将来加入Defi和NFT功能
+2. 重构UI
 ## 🚀 核心特性
 
 - **UI 设计**: 基于 Tailwind CSS v4 构建
@@ -26,9 +27,14 @@ Raccoon Wallet 是一款采去中心化加密货币钱包。
 ## 🧠 技术原理
 
 ### 1. 分层确定性钱包 (HD Wallet) 派生
-Raccoon Wallet 遵循 BIP-39 标准生成 12 或 24 位助记词。
+Raccoon Wallet 遵循 BIP-39 标准生成 12 或 24 位助记词。  
+BIP-32 分层确定性钱包 HD Wallet
 - 熵源生成: 通过 crypto.getRandomValues 获取高质量随机熵。
-- 数据持久化: 敏感信息（私钥、助记词）在加密后存入 localStorage。即使物理设备丢失，没有正确密码也无法解密私钥。
+结构：
+助记词 → 种子（512 位）→ 主私钥 → 子私钥
+- 数据持久化: 敏感信息（私钥、助记词）在加密后存入  
+
+localStorage。即使物理设备丢失，没有正确密码也无法解密私钥。
 ### 2. 本地存储加密方案 (AES-256)
 为了平衡便捷性与安全性，我们采用了 AES-GCM 加密算法：
 - 密码哈希: 用户设置的 6 位以上密码通过 PBKDF2 进行加盐哈希，生成加密密钥。
