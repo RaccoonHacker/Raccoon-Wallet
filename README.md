@@ -1,4 +1,4 @@
-# Raccoon Wallet
+# Raccoon Wallet.
 A secure, multi-chain, user-friendly cryptocurrency wallet built for modern Web3.
 ![](/picture/home.png)
 ## ✨ 核心功能
